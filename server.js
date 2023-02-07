@@ -26,25 +26,20 @@ app.get('/api/notes', (req, res) =>
 );
 
 // GET Route for homepage
-app.get('/api/notes/:id', (req, res) =>{
+app.get('/api/notes:id', (req, res) =>{
     var notes = JSON.parse(fs.readFileSync("./db/db.json","utf-8"));
     res.json(notes[Number(req.params.id)]);
 
 }
-  res.sendFile(path.join(__dirname, '/public/notes.html'))
-);
-
-// GET Route for feedback page
-app.get('/feedback', (req, res) =>
-  res.sendFile(path.join(__dirname, '/public/pages/feedback.html'))
 );
 
 // Wildcard route to direct users to a 404 page
 app.get('*', (req, res) =>
-  res.sendFile(path.join(__dirname, 'public/pages/404.html'))
+  res.sendFile(path.join(__dirname, 'public/index.html'))
 );
 
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT} 🚀`)
 );
+
 
