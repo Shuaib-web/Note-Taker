@@ -3,3 +3,7 @@ Description Note Taker is an application that is used for taking notes, and or m
 
 
 Table of Contents Installation Usage License Contributing Questions Installation The following necessary dependencies must be installed to run the application properly: Express
+
+
+![screencapture-localhost-3001-notes-2023-02-07-22_05_01](https://user-images.githubusercontent.com/72218203/217951697-896ad4ac-1655-478e-ad26-f80ee0581fdd.png)
+
